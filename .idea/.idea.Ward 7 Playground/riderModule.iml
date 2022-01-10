@@ -1,62 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$/../..">
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/SpriteLib" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/Triangle/Geometry" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/Triangle/Properties" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/Triangle/Smoothing" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.animation@5.0.9/Runtime/Triangle/Topology" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1/Editor" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1/Runtime" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.pixel-perfect@4.0.1/Tests" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.psdimporter@4.1.2/Editor" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.psdimporter@4.1.2/Tests" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.spriteshape@5.1.6/Editor" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.spriteshape@5.1.6/Runtime" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.2d.spriteshape@5.1.6/Tests" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.collab-proxy@1.15.4/.Resources" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.collab-proxy@1.15.4/Tests" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.ide.visualstudio@2.0.12/Editor" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.androidjni@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.animation@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.assetbundle@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.audio@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.cloth@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.director@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.imageconversion@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.imgui@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.jsonserialize@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.particlesystem@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.physics2d@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.physics@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.screencapture@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.subsystems@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.terrain@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.terrainphysics@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.tilemap@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.uielements@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.uielementsnative@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.umbra@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.unityanalytics@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.vehicles@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.video@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.modules.wind@1.0.0" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Tests" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.services.core@1.0.1/Editor" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageCache/com.unity.test-framework@1.1.29/UnityEngine.TestRunner" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/PackageManager" />
-      <excludeFolder url="file://$MODULE_DIR$/../../Library/ScriptAssemblies" />
-    </content>
+    <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

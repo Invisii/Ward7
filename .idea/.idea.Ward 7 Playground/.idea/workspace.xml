@@ -10,9 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef22278a-6b99-471c-bde7-8637cc5d5d32" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="ef22278a-6b99-471c-bde7-8637cc5d5d32" name="Default Changelist" comment="Initial Test Build">
+      <change afterPath="$PROJECT_DIR$/Process/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ward 7 Playground/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ward 7 Playground/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Ward 7 Playground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ward 7 Playground/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ward 7 Playground/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ward 7 Playground/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +35,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/InteractionManagerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/POIScript.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Process/README.md" />
       </list>
     </option>
   </component>
@@ -81,8 +86,16 @@
       <option name="presentableId" value="Default" />
       <updated>1636489954134</updated>
       <workItem from="1636489968929" duration="5512000" />
-      <workItem from="1641853048932" duration="2335000" />
+      <workItem from="1641853048932" duration="3980000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Test Build">
+      <created>1641855676027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641855676027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +116,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial Test Build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Test Build" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="284" key="Github.ShareDialog" timestamp="1641854431960">
@@ -113,9 +128,17 @@
       <screen x="0" y="38" width="1512" height="944" />
     </state>
     <state x="380" y="93" key="Github.UntrackedFilesDialog/0.38.1512.944@0.38.1512.944" timestamp="1641854445140" />
+    <state x="332" y="223" key="Vcs.Push.Dialog.v2" timestamp="1641855694269">
+      <screen x="0" y="38" width="1512" height="944" />
+    </state>
+    <state x="332" y="223" key="Vcs.Push.Dialog.v2/0.38.1512.944@0.38.1512.944" timestamp="1641855694269" />
     <state x="509" y="38" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1641853834714">
       <screen x="0" y="38" width="1512" height="944" />
     </state>
     <state x="509" y="38" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.38.1512.944@0.38.1512.944" timestamp="1641853834714" />
+    <state x="411" y="231" key="search.everywhere.popup" timestamp="1641857095626">
+      <screen x="0" y="38" width="1512" height="944" />
+    </state>
+    <state x="411" y="231" key="search.everywhere.popup/0.38.1512.944@0.38.1512.944" timestamp="1641857095626" />
   </component>
 </project>
