@@ -6,7 +6,7 @@
 
 ### CONTENTS
   Weekly Blog
-  + [Week 1: 01.13.22 What are We Doing???](url)
+  + [Week 1: 01.13.22 What are We Doing???](https://github.com/Invisii/Ward7/blob/master/Process/README.md#011322-what-are-we-doing-wk-1-update)
 
   <details>
     <summary>Other Minor Updates</summary>
