@@ -7,6 +7,7 @@
 ### CONTENTS
   Weekly Blog
   + [Week 1: 01.13.22 What are We Doing???](https://github.com/Invisii/Ward7/blob/master/Process/README.md#011322-what-are-we-doing-wk-1-update)
+  + [Week 2: 01.19.22 Gettin' in the Groove!](https://github.com/Invisii/Ward7/tree/master/Process#011922-gettin-in-the-groove-wk-2-update)
 
   <details>
     <summary>Other Minor Updates</summary>
