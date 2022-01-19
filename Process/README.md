@@ -50,7 +50,7 @@
     <li>
       functional prototype with:
       <ul>
-        <li>multiple scenes with scene changes</li>
+        <li>multiple test scenes</li>
         <li>choices/interactions</li>
         <li>basic graphical effects (parallax, typing)</li>
       </ul>
@@ -63,7 +63,7 @@
     <li>
       interaction map
       <ul>
-        <li>each clickable item in every scene will be mapped to its interaction and how those interactions serve the larger story</li>
+        <li>room by room list of all interactions (items, dialogue)</li>
       </ul>
     </li>
     <li>
@@ -89,10 +89,10 @@
     <li>
       all dialogue complete
       <ul>
-        <li>everything read by the player that is “spoken” by a character will be written and organized utilizing the interaction map</li>
+        <li>write all of the text (dialogue, item descriptions/interactions, etc.)</li>
       </ul>
     </li>
-    <li>functional prototype with a few polished scenes</li>
+    <li>functional prototype with first few polished scenes</li>
     <li>polished UI</li>
   </ol>
 </details>
@@ -109,16 +109,40 @@
     <li>
       all writing complete
       <ul>
-        <li>Everything that the player reads will be fully written</li>
+        <li>transferred into Ink files</li>
       </ul>
     </li>
-    <li>half of scenes fully implemented</li>
+    <li>75% of scenes fully implemented</li>
   </ol>
 </details>
  
  <br><br>
  
+## 01.19.22 Gettin' in the Groove! (Wk 2 Update)
+![character floating above bed, sending shockwave out](Images/wk2/explode.png "Initial Scene Sketch")
+
+Now that we have a sense of our characters and format, we're cranking on story this week. With background in mind, we established a map of rooms through which the player will uncover the story. For the scope of capstone, we're looking to make at least one room for each of our 5 characters. Each room will relate to the story of that character, as well as Eli.
+
+![story map with annotations](Images/wk2/story-map-anno.jpeg "Annotated with a few ideas")
+
+On the assets front, this week we began reworking and finalizing character designs, and sketching environments to get a feel for each room.
+
+![first version of Indra with two alternate sketches](Images/wk2/indra-sketch.jpeg "First Version & Revised Sketches")
+
+![hospital room sketch](Images/wk2/hospital-sketch.jpeg "A sample Room, one side")
+
+![updated sketches of Lani with a floating eye](Images/wk2/lani-sketch.jpeg "Updated Lani")
+
+On the Unity front, this week was used to set up more of the framework for our project. I've been building out the ability for dialogue/text to offer choices (which is greatly aided by Inky). Mostly this mean figuring out where and how to display choices within the UI I've already established. I've also been polishing the system to include typing effects.
+
+For the most part, we've kept fairly on top of our weekly goals. Our biggest realization is that both of us function very well when we have some form of structure. So we spent this week developing structure and framework and getting into the groove, and building up momentum and a pattern of collaboration.
+
+We also used this week to sit down and take a look at our overall scope per much of the feedback we received last semester and in class on Thursday. In summary, we scaled down a lot of our goals so we can try to work on depth rather than breadth, with the understanding that the project we end up with may only be the minimum viable product. We can continue to expand the game as needed as if it was released in early access or as if it was releasing DLC.
+
+ <br>
+ 
 ## 01.13.22 What are We Doing??? (Wk 1 Update)
+![five characters lined up](Images/wk1/v1-all.png "Left to Right: Finn, Indra, Marlowe, Eiko, Lani")
 This week is largely focused on the overall structure of our game in broad strokes. We've established the big picture story of our game (more detail in a second), and established that the idea is for the player to uncover this story and figure out what has lead to their current situation. To start, we're thinking of our story as a series of scenes we're calling echoes through which the player will experience the story. Here's a summary of that story we're looking at so far:
 
 <br>
