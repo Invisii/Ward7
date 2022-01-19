@@ -34,6 +34,14 @@ public class InteractionManagerScript : MonoBehaviour
         {
             displayText.text = interaction.Continue();
         }
+
+        if (interaction.currentChoices.Count > 0)
+        {
+            foreach (var choice in interaction.currentChoices)
+            {
+                displayText.text += choice.text;
+            }
+        }
         else
         {
             dialogueBox.SetActive(false); //hide our dialogue box
