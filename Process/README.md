@@ -46,9 +46,9 @@
     <li>
       functional prototype with:
       <ul>
-        <li>multiple test scenes</li>
-        <li>choices/interactions</li>
-        <li>basic graphical effects (parallax, typing)</li>
+        <li>in depth test scene</li>
+        <li>interactions that lead to other mini scenes</li>
+        <li>basic graphical effects (typing, maybe parallax)</li>
       </ul>
     </li>
   </ol>
