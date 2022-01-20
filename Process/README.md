@@ -26,11 +26,6 @@
       <li>environments will be sketched out in their final form with labels </li>
     </ul>
     </li>
-    <li>rough thumbnails/storyboards of all scenes
-      <ul>
-        <li>rough drawings of all scenes will be completed</li>
-      </ul>
-    </li>
     <li>hand animation call sheet
       <ul>
         <li>a detailed list of all hand animations for the project will be completed</li>
@@ -61,6 +56,11 @@
 <details>
   <summary>Iteration 2</summary>
   <ol>
+    <li>rough thumbnails/storyboards of all scenes
+      <ul>
+        <li>rough drawings of all scenes will be completed</li>
+      </ul>
+    </li>
     <li>
       interaction map
       <ul>
