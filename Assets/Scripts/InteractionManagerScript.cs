@@ -13,6 +13,8 @@ public class InteractionManagerScript : MonoBehaviour
 
     public static InteractionManagerScript S;
 
+    private float typeSpeed = 0.03f;
+
     private void Awake()
     {
         if (S == null)
@@ -32,19 +34,24 @@ public class InteractionManagerScript : MonoBehaviour
     {
         if (interaction.canContinue) //if there's more story
         {
-            displayText.text = interaction.Continue();
-        }
-
-        if (interaction.currentChoices.Count > 0)
-        {
-            foreach (var choice in interaction.currentChoices)
-            {
-                displayText.text += choice.text;
-            }
+            string txt = interaction.Continue();
+            StopAllCoroutines();
+            StartCoroutine(TypeSentence(txt));
         }
         else
         {
             dialogueBox.SetActive(false); //hide our dialogue box
+        }
+    }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        displayText.text = "";
+        foreach (char letter in sentence)
+        {
+            displayText.text += letter;
+            if (letter.Equals('.')) yield return new WaitForSeconds(10*typeSpeed);
+            else yield return new WaitForSeconds(typeSpeed);
         }
     }
 }

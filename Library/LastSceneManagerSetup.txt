@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Test-PT Room.unity
+- path: Assets/Scenes/Test-Shockwave.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
