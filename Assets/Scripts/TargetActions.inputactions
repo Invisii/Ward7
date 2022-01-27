@@ -11,7 +11,8 @@
                     "id": "54aefce9-505d-41ec-83b7-f2d8eaf5bc42",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Submit",
@@ -19,7 +20,8 @@
                     "id": "de08b15c-40db-4f58-9679-870b2bd6cff6",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Cancel",
@@ -27,7 +29,8 @@
                     "id": "40811128-bfde-47d3-902a-00114096a964",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Point",
@@ -35,15 +38,17 @@
                     "id": "05a5c704-401a-40e9-99ec-6f2a6e28cb32",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Click",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "95e6eaf1-2565-498e-b508-7c5d1ecf06bc",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
                     "name": "ScrollWheel",
@@ -51,7 +56,8 @@
                     "id": "8187e189-6765-46d4-be12-4e00679a186f",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "MiddleClick",
@@ -59,7 +65,8 @@
                     "id": "ac88b6a2-1f0d-4482-bd46-864c31d855bc",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "RightClick",
@@ -67,7 +74,8 @@
                     "id": "d8170df7-b6a6-4a1b-8df8-ee0029d0ffac",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDevicePosition",
@@ -75,7 +83,8 @@
                     "id": "13a6a4f0-03be-42ed-8fc1-31ae6d51a5b0",
                     "expectedControlType": "Vector3",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "TrackedDeviceOrientation",
@@ -83,7 +92,17 @@
                     "id": "159dc660-c1b5-4847-aae9-9338ced659e6",
                     "expectedControlType": "Quaternion",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "edde2303-dbeb-413b-985f-1f66cff4bbdb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -502,6 +521,17 @@
                     "processors": "",
                     "groups": "XR",
                     "action": "TrackedDeviceOrientation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5dd72803-6292-4f12-b604-82bd39c57adf",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

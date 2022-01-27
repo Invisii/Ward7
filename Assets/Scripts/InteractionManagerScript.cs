@@ -25,6 +25,7 @@ public class InteractionManagerScript : MonoBehaviour
 
     public void BeginDialogue()
     {
+        Debug.Log("beginning");
         interaction.ResetState(); //make sure we're at the beginning of the dialogue
         dialogueBox.SetActive(true); //show our dialogue box
         DisplayNextSentence();

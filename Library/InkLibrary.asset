@@ -43,51 +43,33 @@ MonoBehaviour:
     inkAsset: {fileID: 102900000, guid: 12a17bd6e717e4086b2861f2b49a238e, type: 3}
     jsonAssetDirectory: {fileID: 0}
     jsonAsset: {fileID: 4900000, guid: 43017cea494c345cdad371fd62af5223, type: 3}
-    unhandledCompileErrors:
-    - "Ink Compiler threw exception \nError: Collection was modified; enumeration
-      operation may not execute.\n---- Trace ----\n  at System.Collections.Generic.HashSet`1+Enumerator[T].MoveNext
-      () [0x00013] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 \n  at Ink.CharacterSet.AddCharacters
-      (System.Collections.Generic.IEnumerable`1[T] chars) [0x00018] in /Users/invisii/Desktop/ward
-      7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/CharacterSet.cs:37
-      \n  at Ink.InkParser.ExtendIdentifierCharacterRanges (Ink.CharacterSet identifierCharSet)
-      [0x0000e] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_CharacterRanges.cs:36
-      \n  at Ink.InkParser.get_identifierCharSet () [0x00039] in /Users/invisii/Desktop/ward
-      7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs:412
-      \n  at Ink.InkParser.Identifier () [0x00000] in /Users/invisii/Desktop/ward
-      7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs:384
-      \n  at Ink.InkParser.IdentifierWithMetadata () [0x00000] in /Users/invisii/Desktop/ward
-      7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Logic.cs:372
-      \n  at Ink.StringParser.Parse[T] (Ink.StringParser+SpecificParseRule`1[T] rule)
-      [0x00007] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:267
-      \n  at Ink.InkParser.AuthorWarning () [0x00007] in /Users/invisii/Desktop/ward
-      7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_AuthorWarning.cs:11
-      \n  at Ink.StringParser.ParseObject (Ink.StringParser+ParseRule rule) [0x00012]
-      in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:250
-      \n  at Ink.InkParser+<>c__DisplayClass146_0.<Line>b__0 () [0x00000] in /Users/invisii/Desktop/ward
-      7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:147
-      \n  at Ink.StringParser.ParseObject (Ink.StringParser+ParseRule rule) [0x00012]
-      in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:250
-      \n  at Ink.StringParser.OneOf (Ink.StringParser+ParseRule[] array) [0x0000a]
-      in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:280
-      \n  at Ink.InkParser.StatementAtLevel (Ink.InkParser+StatementLevel level)
-      [0x00009] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:38
-      \n  at Ink.InkParser+<>c__DisplayClass141_0.<StatementsAtLevel>b__0 () [0x00000]
-      in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:30
-      \n  at Ink.StringParser.ParseObject (Ink.StringParser+ParseRule rule) [0x00012]
-      in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:250
-      \n  at Ink.StringParser.Interleave[T] (Ink.StringParser+ParseRule ruleA, Ink.StringParser+ParseRule
-      ruleB, Ink.StringParser+ParseRule untilTerminator, System.Boolean flatten)
-      [0x00040] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/StringParser/StringParser.cs:393
-      \n  at Ink.InkParser.StatementsAtLevel (Ink.InkParser+StatementLevel level)
-      [0x0003c] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser_Statements.cs:28
-      \n  at Ink.InkParser.Parse () [0x00000] in /Users/invisii/Desktop/ward 7/Ward
-      7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/InkParser/InkParser.cs:46
-      \n  at Ink.Compiler.Parse () [0x00033] in /Users/invisii/Desktop/ward 7/Ward
-      7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/Compiler.cs:35 \n  at Ink.Compiler.Compile
-      () [0x00000] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/InkLibs/InkCompiler/Compiler.cs:41
-      \n  at Ink.UnityIntegration.InkCompiler.CompileInkThreaded (System.Object itemObj)
-      [0x00085] in /Users/invisii/Desktop/ward 7/Ward 7 Playground/Assets/Libs/Ink/Editor/Core/Compiler/InkCompiler.cs:419
-      \n--------\n"
+    unhandledCompileErrors: []
+    errors: []
+    warnings: []
+    todos: []
+    parents: []
+    masterInkAssets: []
+    masterInkAsset: {fileID: 0}
+    includePaths: []
+    includes: []
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: e79532ebfb532774db43c69073bf851e, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: 653f4f44829f07f488df6b6ba4708326, type: 3}
+    unhandledCompileErrors: []
+    errors: []
+    warnings: []
+    todos: []
+    parents: []
+    masterInkAssets: []
+    masterInkAsset: {fileID: 0}
+    includePaths: []
+    includes: []
+  - compileAutomatically: 0
+    inkAsset: {fileID: 102900000, guid: 28e882ee9d07d004bba0cb92fac2e36a, type: 3}
+    jsonAssetDirectory: {fileID: 0}
+    jsonAsset: {fileID: 4900000, guid: bacffc1a8329ed1499d7c9fe7b485b58, type: 3}
+    unhandledCompileErrors: []
     errors: []
     warnings: []
     todos: []
