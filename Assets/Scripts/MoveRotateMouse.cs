@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
+//using UnityEngine.InputSystem;
 
 public class MoveRotateMouse : MoveToMouse
 {
@@ -8,7 +8,7 @@ public class MoveRotateMouse : MoveToMouse
     protected override void Awake()
     {
         base.Awake();
-        PlayerInput input = FindObjectOfType<PlayerInput>();
+     //   PlayerInput input = FindObjectOfType<PlayerInput>();
         if (input.notificationBehavior == PlayerNotifications.InvokeCSharpEvents)
         {
             input.onActionTriggered += TriggerPoint;

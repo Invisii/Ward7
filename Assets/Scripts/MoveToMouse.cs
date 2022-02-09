@@ -4,6 +4,8 @@ using Cinemachine.Utility;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+//using UnityEngine.InputSystem;
+
 public class MoveToMouse : MonoBehaviour
 {
     public float minimize = 0.03f;
@@ -21,10 +23,9 @@ public class MoveToMouse : MonoBehaviour
         
     }
 
-    public void Move(InputAction.CallbackContext context)
+    public void Move()
     {
-        if (context.canceled) return;
-        Vector2 mousePos = context.ReadValue<Vector2>();
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         MoveMouse(mousePos);
     }
 
@@ -41,7 +42,7 @@ public class MoveToMouse : MonoBehaviour
     
     private bool OutOfBounds()
     {
-        Vector2 mousePos = Mouse.current.position.ReadValue();
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         if (mousePos.x < 0 || mousePos.y < 0 || mousePos.x > Screen.width || mousePos.y > Screen.height) return true;
         return false;
     }
