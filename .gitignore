@@ -2,7 +2,7 @@
 .gitconfig
 
 # unity generated folders
-library/
+#library/
 temp/
 obj/
 build/

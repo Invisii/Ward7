@@ -5,7 +5,7 @@
 <br>
 
 ### CONTENTS
-  Weekly Blog
+  Blog
   + [Week 1: 01.13.22 What are We Doing???](https://github.com/Invisii/Ward7/blob/master/Process/README.md#011322-what-are-we-doing-wk-1-update)
   + [Week 2: 01.19.22 Gettin' in the Groove!](https://github.com/Invisii/Ward7/tree/master/Process#011922-gettin-in-the-groove-wk-2-update)
 
@@ -118,6 +118,36 @@
 </details>
  
  <br><br>
+ 
+## 02.09.22 Catchin' Up (Wk 5 Update)
+
+Whoops I missed the past few weeks! 
+
+Regardless we've been making progress!
+We've made it past our first iteration, and have an initial build working with interactibles and a parallax effect that just feels oh so juicy.
+(It's also been debugged and reverted back to Unity's old input system after a LOT of bugs the first go around.)
+
+![top down view of a room in chaos. a mouse moves around the screen, shifting perspective](Images/wk5/parallax-v1.gif "It Lives!")
+
+We also put this in front of a few people who thought it had a lot of potential and we're pretty sure we're heading in the right direction.
+Past this prototype, we discussed a few other minor mechanics I'm working on implementing. 
+
+The first is a 'sticker book' which essentially acts as a collection. Since we have a sort of point and click vibe going on, we thought it might be good to hide stickers around the scenes for some extra lore.
+
+The second is scenes which you have to 'paint on' with your mouse. We have several memories we want each of our characters to be connected to, but since their stories are localized within their rooms, we decided that some of the objects in these rooms will open a sort of secondary room to explore.
+Since the vibe is 'uncovering memories' we really want to emphasize the actions that the player takes.
+
+On the assets front, Calvin has made a ton of progress this week on the room bases, and we developed a comprehensive list of interactions in each of the rooms. 
+
+| ![hospital room viewing bed, with sketched figure sitting](Images/wk5/Eiko_Room.png) | ![hospital room viewing a bed from its end with a figure sitting on it. the window is covered by tapestries](Images/wk5/IndraRoom.png) | ![hospital room viewing bed, a figure lies down looking up at the ceiling, a ghostly eye extending from his head](Images/wk5/Lani_Room.png)
+| -------------- | ----------- | ------------|
+
+Calvin also started making some more in depth renders of environments we'd like to explore including an initial render of Marlowe's room (which is where our intro/tutorial will take place) and a creepy render of Indra
+
+![a rendered view of a hospital room, a creepy shadow peeks from under the pillow](Images/wk5/Marlowe_Room_V1.JPG "Initial look at Marlowe's Room")
+![a rendered view of a very dark hallway, looking up from the floor. in the background a shadowy figure with glowing white eyes stares at us](Images/wk5/Hallway.JPG "It Lives!")
+ 
+ <br>
  
 ## 01.19.22 Gettin' in the Groove! (Wk 2 Update)
 ![character floating above bed, sending shockwave out](Images/wk2/explode.png "Initial Scene Sketch")

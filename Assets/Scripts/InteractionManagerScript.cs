@@ -10,10 +10,11 @@ public class InteractionManagerScript : MonoBehaviour
     public Text displayText;
     public GameObject dialogueBox;
     public Story interaction;
+    public bool activeStory = false;
+    
+    private float typeSpeed = 0.03f;
 
     public static InteractionManagerScript S;
-
-    private float typeSpeed = 0.03f;
 
     private void Awake()
     {
@@ -23,11 +24,19 @@ public class InteractionManagerScript : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && activeStory)
+        {
+            DisplayNextSentence();
+        }
+    }
+
     public void BeginDialogue()
     {
-        Debug.Log("beginning");
         interaction.ResetState(); //make sure we're at the beginning of the dialogue
         dialogueBox.SetActive(true); //show our dialogue box
+        activeStory = true;
         DisplayNextSentence();
     }
 
@@ -42,6 +51,7 @@ public class InteractionManagerScript : MonoBehaviour
         else
         {
             dialogueBox.SetActive(false); //hide our dialogue box
+            activeStory = false;
         }
     }
 

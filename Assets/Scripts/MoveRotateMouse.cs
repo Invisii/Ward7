@@ -1,32 +1,35 @@
+using System;
 using UnityEngine;
-//using UnityEngine.InputSystem;
 
-public class MoveRotateMouse : MoveToMouse
+public class MoveRotateMouse : MonoBehaviour
 {
     public float minX = -2, minY = -2, maxX = 2, maxY = 2;
+    public float minimize = 0.03f;
+    private Camera mainCam;
+    private float z;
+    private Vector2 basePosition;
 
-    protected override void Awake()
+    private void Awake()
     {
-        base.Awake();
-     //   PlayerInput input = FindObjectOfType<PlayerInput>();
-        if (input.notificationBehavior == PlayerNotifications.InvokeCSharpEvents)
-        {
-            input.onActionTriggered += TriggerPoint;
-        }
+        mainCam = Camera.main;
+        var dist = transform.position - mainCam.transform.position;
+        z = Distance(transform.position.z, mainCam.transform.position.z);
+        basePosition = transform.position;
     }
 
-    private void TriggerPoint(InputAction.CallbackContext context)
+    private void Update()
     {
-        if (context.canceled) return;
-        if (context.action.name == "Point" && context.performed)
-        {
-            MoveMouse(context.ReadValue<Vector2>());
-        }
+        Move();
     }
 
-    protected override void MoveMouse(Vector2 mousePos)
+    private void Move()
     {
-        base.MoveMouse(mousePos);
+        var mousePos = Input.mousePosition;
+        mousePos = mainCam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, z));
+        Vector2 newPos = new Vector2(CalculateX(mousePos.x), CalculateY(mousePos.y));
+
+        transform.position = new Vector3(basePosition.x, basePosition.y, 0) +
+                             new Vector3(newPos.x, newPos.y, transform.position.z);
         Rotate();
     }
 
@@ -43,5 +46,19 @@ public class MoveRotateMouse : MoveToMouse
             Distance(transform.position.y, minPossibleY) / Distance(maxPossibleY, minPossibleY));
 
         transform.eulerAngles = new Vector3(rotateY, rotateX, 0);
+    }
+
+    private float CalculateX(float mouseX)
+    {
+        return mouseX * minimize * ((float) Screen.height / (float) Screen.width);
+    }
+    private float CalculateY(float mouseY)
+    {
+        return mouseY * minimize * ((float) Screen.width / (float) Screen.height);
+    }
+
+    private float Distance(float a, float b)
+    {
+        return Mathf.Abs(a - b);
     }
 }
