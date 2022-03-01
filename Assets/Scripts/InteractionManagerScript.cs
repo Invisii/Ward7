@@ -10,7 +10,10 @@ public class InteractionManagerScript : MonoBehaviour
     public Text displayText;
     public GameObject dialogueBox;
     public Story interaction;
+    public GameObject focus;
+    public GameObject fader;
     public bool activeStory = false;
+    public bool focused = false;
     
     private float typeSpeed = 0.03f;
 
@@ -26,18 +29,21 @@ public class InteractionManagerScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && activeStory)
-        {
-            DisplayNextSentence();
-        }
+        if (Input.GetMouseButtonDown(0)) checkClick();
+        if (Input.GetKeyDown(KeyCode.RightArrow) && activeStory) DisplayNextSentence();
     }
 
+    public void checkClick()
+    {
+        if (activeStory) DisplayNextSentence();
+    }
+    
+    
     public void BeginDialogue()
     {
         interaction.ResetState(); //make sure we're at the beginning of the dialogue
         dialogueBox.SetActive(true); //show our dialogue box
         activeStory = true;
-        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -45,8 +51,9 @@ public class InteractionManagerScript : MonoBehaviour
         if (interaction.canContinue) //if there's more story
         {
             string txt = interaction.Continue();
+            List<string> tags = interaction.currentTags;
             StopAllCoroutines();
-            StartCoroutine(TypeSentence(txt));
+            StartCoroutine(TypeSentence(txt, tags));
         }
         else
         {
@@ -54,15 +61,40 @@ public class InteractionManagerScript : MonoBehaviour
             activeStory = false;
         }
     }
+    
+    /*
+     * =======LIST OF TAGS=========
+     * #softReturn - tack this onto the previous text without erasing.
+     * #ignorePeriod - do not pause on the period(s) in this sentence.
+     */
 
-    IEnumerator TypeSentence(string sentence)
+    IEnumerator TypeSentence(string sentence, List<string> tags)
     {
-        displayText.text = "";
+        if (tags.Contains("softReturn"))
+        {
+            displayText.text += "\r";
+        }
+        else displayText.text = "";
         foreach (char letter in sentence)
         {
             displayText.text += letter;
-            if (letter.Equals('.')) yield return new WaitForSeconds(10*typeSpeed);
+            if (letter.Equals('.') && !tags.Contains("ignorePeriod")) yield return new WaitForSeconds(10*typeSpeed);
             else yield return new WaitForSeconds(typeSpeed);
         }
+    }
+
+    public void focusObj()
+    {
+        fader.SetActive(true);
+        focus.SetActive(true);
+        focused = true;
+    }
+
+    public void unFocusObj()
+    {
+        focus.SetActive(false);
+        fader.SetActive(false);
+        focus = null;
+        focused = false;
     }
 }

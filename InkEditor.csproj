@@ -53,19 +53,19 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Libs\Ink\Editor\Tools\Build Validation\InkPreBuildValidationCheck.cs" />
+     <Compile Include="Assets\Libs\Ink\Editor\Tools\Ink Inspector\InkInspector.cs" />
+     <Compile Include="Assets\Libs\Ink\Editor\Tools\File Icons\InkBrowserIcons.cs" />
+     <Compile Include="Assets\Libs\Ink\Editor\Core\Ink Library\InkLibrary.cs" />
+     <Compile Include="Assets\Libs\Ink\Editor\Core\Compiler\InkCompiler.cs" />
+     <Compile Include="Assets\Libs\Ink\Editor\Tools\Player Window\InkPlayerWindow.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Tools\Ink Inspector\DefaultAssetInspector.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\Ink Settings\InkSettingsEditor.cs" />
-     <Compile Include="Assets\Libs\Ink\Editor\Tools\Ink Inspector\InkInspector.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\Ink Settings\InkSettings.cs" />
-     <Compile Include="Assets\Libs\Ink\Editor\Tools\File Icons\InkBrowserIcons.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\Ink Library\InkFile.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\Ink Library\InkCompilerLog.cs" />
-     <Compile Include="Assets\Libs\Ink\Editor\Core\Ink Library\InkLibrary.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Tools\Startup Window\InkUnityIntegrationStartupWindow.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Tools\Player Window\InkHistoryContentItem.cs" />
-     <Compile Include="Assets\Libs\Ink\Editor\Core\Compiler\InkCompiler.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Tools\Ink Inspector\DefaultAssetEditor.cs" />
-     <Compile Include="Assets\Libs\Ink\Editor\Tools\Player Window\InkPlayerWindow.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\Compiler\UnityInkFileHandler.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\InkEditorUtils.cs" />
      <Compile Include="Assets\Libs\Ink\Editor\Core\Compiler\Auto Compiler\InkPostProcessor.cs" />
@@ -311,11 +311,11 @@
  <Reference Include="log4netPlastic">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>
- <Reference Include="Newtonsoft.Json">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
- </Reference>
  <Reference Include="ICSharpCode.NRefactory">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/PackageCache/com.unity.render-pipelines.core@10.6.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

@@ -6,7 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Test-Explosion.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Hallway.unity
+    guid: 6f0ffa892e16747af82fc55819742663
+  - enabled: 1
+    path: Assets/Scenes/Marlowe.unity
+    guid: a813f0bc4762847a5ac4714bd4956df9
+  - enabled: 1
+    path: Assets/Scenes/Finn.unity
+    guid: df52c8b6932703943b182037f835a23b
+  - enabled: 1
+    path: Assets/Scenes/Eiko.unity
+    guid: 0f25418e9d4754e65abe0ef6f4016621
+  - enabled: 1
+    path: Assets/Scenes/Lani.unity
+    guid: 96017d63e174c4ceba6d2fa7ac314a9e
+  - enabled: 1
+    path: Assets/Scenes/Indra.unity
+    guid: 2cda48d89cc4943b09fc3fe0ec1b2f42
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 3c65739c4c2a48a4a930cd75e3e78002, type: 2}

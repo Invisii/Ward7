@@ -52,12 +52,22 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\FocusedPOI.cs" />
      <Compile Include="Assets\Scripts\InteractionManagerScript.cs" />
+     <Compile Include="Assets\Scripts\doorScript.cs" />
      <Compile Include="Assets\Scripts\POIScript.cs" />
      <Compile Include="Assets\Scripts\MoveRotateMouse.cs" />
      <Compile Include="Assets\Libs\Ink\Demos\Basic Demo\Scripts\BasicInkExample.cs" />
      <Compile Include="Assets\Libs\Ink\Demos\Basic Demo\Scripts\QuitGameOnKeypress.cs" />
-     <None Include="Assets\Scripts\Shaders\BrushReveal.shader" />
+     <Compile Include="Assets\Renderer\test crap\mouseBrush.cs" />
+     <Compile Include="Assets\Scripts\POIFocusScript.cs" />
+     <Compile Include="Assets\Scripts\OutlineCreator.cs" />
+     <Compile Include="Assets\Renderer\test crap\PaintBrush.cs" />
+     <Compile Include="Assets\Scripts\hallwayMove.cs" />
+     <Compile Include="Assets\Scripts\FadeScript.cs" />
+     <None Include="Assets\Renderer\test crap\BrushReveal.shader" />
+     <None Include="Assets\Renderer\test crap\FrostedGlass.shader" />
+     <None Include="Assets\Renderer\test crap\frosty.shader" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
@@ -631,20 +641,32 @@
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.Timeline">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Searcher.Editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Sprite.Editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Runtime">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -655,50 +677,41 @@
  <Reference Include="Unity.Rider.Editor">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="com.unity.cinemachine.editor">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
- </Reference>
- <Reference Include="Cinemachine">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Searcher.Editor">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Mathematics.Editor">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
- </Reference>
- <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
- </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
- <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
- </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
  <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <Reference Include="Cinemachine">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+ </Reference>
+ <Reference Include="com.unity.cinemachine.editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Universal.Editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Timeline.Editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Mathematics.Editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.RenderPipelines.Core.Editor">
+ <HintPath>/Users/invisii/Desktop/ward 7/Ward7/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -1,3 +1,0 @@
-beepityboopity
-haha
-lol

@@ -4,7 +4,7 @@ using UnityEngine;
 public class MoveRotateMouse : MonoBehaviour
 {
     public float minX = -2, minY = -2, maxX = 2, maxY = 2;
-    public float minimize = 0.03f;
+    public float minimize = 0.01f;
     private Camera mainCam;
     private float z;
     private Vector2 basePosition;
