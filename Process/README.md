@@ -8,7 +8,7 @@
   Blog
   + [Week 1: 01.13.22 What are We Doing???](https://github.com/Invisii/Ward7/blob/master/Process/README.md#011322-what-are-we-doing-wk-1-update)
   + [Week 2: 01.19.22 Getting in the Groove!](https://github.com/Invisii/Ward7/tree/master/Process#011922-gettin-in-the-groove-wk-2-update)
-  + [Week 3-4: 02.02.22 Worldbuilding]
+  + [Week 3 &#8211; 4: 02.02.22 Worldbuilding]
   + [Week 5: 02.09.22 First Blood](https://github.com/Invisii/Ward7/tree/master/Process#020922-catchin-up-wk-5-update)
   + [Week 6: 02.06.22 Detailing (Like a Car)]
 
