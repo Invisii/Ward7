@@ -8,8 +8,11 @@ public class POIScript : MonoBehaviour
 {
     public TextAsset inkAsset;
     public Material hoverMat;
-    [Range(0f, .99999f)]
-    public float thickness; 
+    [Range(0f, 200f)]
+    public float thickness;
+
+    public bool clicked = false;
+    public Sprite color;
         
     private Material defMat;
     private SpriteRenderer spr;
@@ -18,15 +21,19 @@ public class POIScript : MonoBehaviour
     {
         spr = GetComponent<SpriteRenderer>();
         defMat = GetComponent<SpriteRenderer>().material;
-        if (hoverMat == null)
+    }
+
+    private void Update()
+    {
+        if (clicked)
         {
-            hoverMat = Resources.Load<Material>("/Assets/Renderer/Shine_Material.mat");
+            spr.sprite = color;
         }
     }
 
     private void OnMouseEnter()
     {
-        if (!InteractionManagerScript.S.focused)
+        if (!InteractionManagerScript.S.focused && !InteractionManagerScript.S.activeStory)
         {
             spr.material = hoverMat;
             spr.material.SetFloat("_Thicc", thickness);
@@ -43,15 +50,13 @@ public class POIScript : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (InteractionManagerScript.S.focused)
-        {
-            InteractionManagerScript.S.unFocusObj();
-        }
-        else if (!InteractionManagerScript.S.activeStory)
+        if (!InteractionManagerScript.S.focused && !InteractionManagerScript.S.activeStory)
         {
             InteractionManagerScript.S.interaction = new Story(inkAsset.text); //make Unity obj out of our Ink file
             InteractionManagerScript.S.BeginDialogue();   
         }
+
+        clicked = true;
     }
 
 }
