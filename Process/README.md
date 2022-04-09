@@ -8,9 +8,12 @@
   Blog
   + [Week 1: 01.13.22 What are We Doing???](https://github.com/Invisii/Ward7/blob/master/Process/README.md#011322-what-are-we-doing-wk-1-update)
   + [Week 2: 01.19.22 Getting in the Groove!](https://github.com/Invisii/Ward7/tree/master/Process#011922-gettin-in-the-groove-wk-2-update)
-  + [Week 3 &#8211; 4: 02.02.22 Worldbuilding]
+  + [Week 3 &#8211; 4: 02.02.22 Worldbuilding](https://github.com/Invisii/Ward7/tree/master/Process#020222-worldbuilding-wk-3-4-update)
   + [Week 5: 02.09.22 First Blood](https://github.com/Invisii/Ward7/tree/master/Process#020922-catchin-up-wk-5-update)
-  + [Week 6: 02.06.22 Detailing (Like a Car)]
+  + [Week 6: 02.16.22 Detailing (Like a Car)](https://github.com/Invisii/Ward7/tree/master/Process#021622-detailing-like-a-car-wk-6-update)
+  + [Week 7: 02.23.22 Connections](https://github.com/Invisii/Ward7/tree/master/Process#022322-connections-wk-7-update)
+  + [Week 8 &#8211; 9: 03.09.22 Placeholders and Other Progress](https://github.com/Invisii/Ward7/tree/master/Process#030922-placeholders-and-other-progress-wk-8-9-update)
+  + [Week 10: 03.16.22 Filling in the Gaps](https://github.com/Invisii/Ward7/tree/master/Process#031622-filling-in-the-gaps-wk-10-update)
 
   <details>
     <summary>Other Minor Updates</summary>
@@ -121,10 +124,70 @@
 </details>
  
  <br><br>
+
+ //Week 12: Textbox, Dialogue System
+ //Week 11: UI Tests, Ribbon, Intro Anim
+
+ 
+## 03.16.22 Filling in the Gaps (Wk 10 Update)
+
+This week Calvin and I sat down and figured out all the assets and other bits of the story we had planned that we really wanted to implement. Since I'm mostly caught up on implementing systems and assets, I used some time this week to get going on the other mechanics we wanted to implement.
+
+The first I had mentioned a number of weeks ago: the sticker book. Calvin mentioned that especially in hospitals for kids, they often hand out strange little square or circular stickers often with popular characters or cute little phrases on them. We want to design a bunch of them and hide them around our rooms like a little extra Where's Waldo hunt. Plus we can attach dialogue or some extra meaning to them for a fun extra bit of story.
+
+![Three circular designs. Each has a yellow rubber ducky wearing sunglasses in the center and the words "Go With the Flow" along the bottom. The backgrounds are different: first solid blue, the second with a darker blue wave in front of the bottom of the duck, and the third with several layers of waves going from light at the top to dark at the bottom.](Images/wk10/flow.png "First sticker test, for Marlowe's water bottle")
+
+In order to organize and interact with these elements beyond picking them up in the world, we also need a designated space to store them. So I also whipped up a journal of sorts. We can then organize them so each page corresponds to stickers related to different characters. We can also include some of our other close up objects like tarot cards, and maybe even implement something for the player to take notes for themselves if we ever manage to make this game complicated enough to warrant that.
+
+![A rendering of a book open to a blank page. It has a purple cover, and two bookmarks in the bottom left and the top right.](Images/wk10/journal.png "A nice journal!")
+
+Calvin also made two postcards (complete with handwritten backs), and I revisited an old design of mine to make it kind of match the vibes.
+
+![An illustrated postcard with the peak of a mountain against a teal sky. The base is covered by clouds, where it reads "Greetings from Mt. Rainier".](Images/wk10/rainier.png "Calvin's Mt. Rainier") | ![An illustrated postcard of a row of brightly colored buildings against a watercolor faded blue sky. Over the buildings, curved script reads "Santa Cruz" repeated over itself in 3 colors (the same as the lower buildings)](Images/wk10/cruz.png "Calvin's Santa Cruz") | ![A draft of a postcard of a redwood postcard. The background sky is light yellow fading into darker orange, and the trees (just trunks, no leaves) are dark blue extending tall up to the top. They seem to curve rapidly away from the camera as if to suggest their enormous scale.](Images/wk10/redwood.png "My draft of Redwood National Park")
+--- | --- | ---
+
+<br>
+ 
+## 03.09.22 Placeholders and Other Progress (Wk 8-9 Update) 
+
+These last two weeks have been slower on the development front because I've been working on setting up the script with all of our written assets, and Calvin's been going along with writing.
+
+![A flat grayscale room with a small figure sitting on the bed. She is surrounded by several animals: two bunnies, a goose, a loon, a hummingbird, and a canary.](Images/wk8/eiko.gif "Eiko's Room: Now with Parallax!")
+
+This last week I finished implementing all of the placeholders so we can test implementing writing and get people to be able to click all the things to get a sense of our storytelling. And of course as Calvin gives me finished flats or shaded assets I've been tossing them in as well. The room above is Eiko's room with the flats implemented. The below is Finn's room with one of the placeholders. Finn's wall has a couple posters that you can click on to focus in on them and see them up close. While I'm waiting for Calvin to illustrate this focus object, I just put a png similar to the poster we have planned. In context, it looks really *really* funny.
+
+![A view of a hospital room looking top down over a girl floating above the bed. The cursor clicks on a gray rectangle in the background and pulls up a picture of Billie Eilish.](Images/wk8/eilish.gif "Look! Billie Eilish!")
+
+Calvin also gave me an asset that needed to use a blending mode, and I quickly discovered that Unity doesn't quite support blending modes in an easy way. So using my learned knowledge of shaders from last week I whipped up a shader to work with this blending mode. It looks kinda wild in parallax.
+
+![A web of lines and boxes in a program interface](Images/wk8/blend.png "If I thought the edge glow shader was complicated, this one is hogwild.")
+![A dark hospital room with a figure sitting on the bed, holding a palm up to the camera. They are surrounded by a cloud of darkness, and a cat sits on the foot of the bed. To the left of the screen is a chest with several objects on top of it.](Images/wk8/indra.gif "The cloud here has a hard light blending mode from my shader!")
+
+<br>
+ 
+## 02.23.22 Connections (Wk 7 Update)
+
+This week is another iteration week! It came up super quickly following the last (or are we just running behind?). Regardless, for this week we made a ton of progress in the framework and systems for this game. Now that we're getting more than one room implemented, we needed a way to move between them. Our solution for this was to make a sort 2.5 dimension hallway with the door frames representing the different patient's rooms.
+
+![A short gif showing the Unity interface, demonstrating the assembly of several 2D images into a pseudo 3D environment, then a second view showing the resulting hallway.](Images/wk7/hallway.png "Unity Builder view and Game View")
+
+Since the hallway became kind of long, I also implemented a way to navigate forwards and backwards through it so Lani's room, which is at the far end of the hallway, would be more easily selectable. The hallway also has the same sort of parallax effect that the individual rooms do. The art for the hallways is fairly bare bones for now, but there's plenty of room for more detail we can put into each character's door later.
+
+![A short gif showing the same hallway. The camera pans deeper into the scene, and moves around, controlled by the mouse. The camera then zooms back out, and the mouse clicks on a door labeled "Marlowe". The scene changes to show a muted purple and blue hospital room. The mouse clicks and a text box pops up at the bottom of the screen.](Images/wk7/hall-marlowe.gif "Hallway Nav, Room Entry, and Interaction")
+
+Also, after our first iteration, we got a lot of comments about communicating to the player what they can do. Mostly, they wanted some sort of indication that objects were selectable. So the bulk of the work this week was put into making objects highlight on hover. You can see the hover effect in the gif above. It has a slight glow on it that feels like it matches the ethereal vibe of the game.
+
+Tbh, it was a pain to implement. I ended up making a shader that adds an outline with a glow effect on it, and hovering over objects that have an interaction swaps the object's material with this outlined one. To make it, I learned a bunch of shadergraph nonsense and made this abomination of a graph (I've never worked with shaders before, so this was a trip to learn and make):
+
+![A web of lines and boxes in a program interface](Images/wk7/shader.png "This thing has subgraphs too")
+
+As for art, this week, Calvin got sick, so we don't have much new to share :( Next week, I'd like to get placeholders for some missing objects in Finn and Marlowe's rooms, and to put in placeholders in Indra Dao, Lani, and Eiko's rooms so we can get a feel for the game as a whole.
+
+<br>
  
 ## 02.16.22 Detailing (Like a Car) (Wk 6 Update)
 
-Last week really felt like a major success. To see the art in Unity (though it was the unshaded prototypes, I'll get in shaded art when there's more of it to implement)
+Last week really felt like a major success. To see the art in Unity (though it was the unshaded prototypes, I'll get in shaded art when there's more of it to implement) really put into perspective the fact that we're actually making something and its real. That feels crazy.
 
 This week, I took the nicely colored Marlowe's Room and implemented it into the parallax system we got going last week. (It's also been debugged and reverted back to Unity's old input system after a LOT of bugs the first go around. You can now click on objects without awful raycasting! Yay!)
 
@@ -180,7 +243,7 @@ The first piece of this is the setting - the rare and complex diseases ward on t
 
 The other big piece of this is the characters themselves. We know right away that in one of the scenes (Marlowe's Room), she has a phone on her side table. We want the player to be able to interact with the phone and see her lockscreen, with a background picture, and a little 'now playing' widget. We really like the idea of having the playlist icon be a QR code that the player can actually scan to go to the playlist that Marlowe is supposedly shuffling. So we made it. And then we made playlists for all of our other characters too. They're a good way to get into the characters heads, and they double as appropriate background music for when we ourselves are working with the stories of a particular character.
 
->####Spotify Character Playlists
+####Spotify Character Playlists
  >&emsp; &emsp;  [Lani](https://open.spotify.com/playlist/5HsyFK8FqdD5NjIwO0ECLS?si=ce04c8b25be9435d) &emsp; &emsp; |  &emsp; &emsp; [Marlowe](https://open.spotify.com/playlist/2TeNqWU51GWWd0fDqX2FbQ?si=180468a38e264314)  &emsp; &emsp; |  &emsp; &emsp; [Eiko](https://open.spotify.com/playlist/2FFQOYytevlcujhiP31S42?si=0379efdcbae7476c) <br>
 >&emsp; &emsp; [Indra](https://open.spotify.com/playlist/3mcgJ9xPE0kagkLvGBJ2Rn?si=4832785077504b96) &emsp; &emsp; | &emsp; &emsp; [Finn](https://open.spotify.com/playlist/75GOaKFz32emCs9q6tboMZ?si=70181024397e44a8) &emsp; &emsp; | &emsp; &emsp; [Eli](https://open.spotify.com/playlist/3iZoNL9B76iFDlrCJsuDpx?si=d69320134a3749cc)
 
