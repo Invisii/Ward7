@@ -1,0 +1,2 @@
+I like hummingbirds cause they’re so fast, it seems im-pahst-able! #dia #char #Eiko
+When my heart is better I’m gonna run as fast as Dale can fly, but Dr. Bram says I’m not quite ready yet. #ignorePeriod #char #Eiko

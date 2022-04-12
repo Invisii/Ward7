@@ -1,0 +1,2 @@
+Dads say I call too many bunnies, who ever heard of such a thing! #dia #char #Eiko
+Dr. Bram only let me keep two but that’s only cause he says that hospitals have a two bunny rule and I don’t want him to get in trouble with the president. #char #Eiko #ignorePeriod
